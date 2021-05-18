@@ -1,0 +1,98 @@
+.profile {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.back-btn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #ffe2de;
+}
+.left {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+.text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-top: 28%;
+  padding-left: 20px;
+  background-color: #ffe2de;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+.text p {
+  position: relative;
+  margin: 10px 10px;
+}
+.text hr {
+  width: 70%;
+  border: #d3b6bb 1px solid;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.profile-img {
+  position: absolute;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+}
+.profile-img img {
+  position: absolute;
+  width: 40vw;
+  top: 50%;
+  left: 5vw;
+  transform: translateY(-50%);
+}
+.pro,
+.file,
+.edu,
+.cation {
+  position: absolute;
+  font-size: 5rem;
+  top: 20px;
+}
+.pro {
+  z-index: 4;
+  right: 0;
+  color: white;
+}
+.file {
+  z-index: 3;
+  left: 0;
+  color: #ffe2de;
+}
+@media (max-width: 1000px) {
+  .left {
+    width: 100%;
+  }
+  .text {
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+    height: 100vh;
+    padding-top: 10%;
+  }
+  .profile-img {
+    display: none;
+  }
+  .pro,
+  .file {
+    display: none;
+  }
+  .profile-title {
+    display: block !important;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    background-color: #ffe2de;
+  }
+}

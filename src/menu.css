@@ -1,0 +1,149 @@
+.link {
+  --links_circle_color: rgb(255, 72, 0);
+  width: 10rem;
+  height: 4rem;
+  border-radius: 80px;
+  background-color: rgb(153, 153, 153);
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 5px 5px 8px #000000a4;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
+.link-circle {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  border-top: solid rgb(255, 72, 0) 2px;
+  border-bottom: solid rgb(255, 72, 0) 2px;
+  border-left: solid transparent 2px;
+  border-right: solid transparent 2px;
+  pointer-events: none;
+  animation: c1_rotate 7s infinite linear;
+}
+.link1 {
+  top: 0;
+  left: -3rem;
+}
+.link2 {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -11rem;
+}
+.link3 {
+  top: 100%;
+  transform: translateY(-100%);
+  left: -3rem;
+}
+.link4 {
+  top: 0;
+  right: -3rem;
+}
+.link5 {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -11rem;
+}
+.link6 {
+  top: 100%;
+  transform: translateY(-100%);
+  right: -3rem;
+}
+.inner-link,
+a {
+  display: block;
+  background-color: white;
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+  padding-top: 0.6vw;
+  padding-left: 2px;
+}
+/* .inner-link:hover {
+  width: 100%;
+  border-radius: 80px;
+} */
+@media (max-width: 1100px) {
+  .link {
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+  .link5 {
+    right: -8rem;
+  }
+  .link2 {
+    left: -8rem;
+  }
+}
+@media (max-width: 700px) {
+  .link {
+    width: 5.3rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .link1 {
+    left: -0.5rem;
+  }
+  .link2 {
+    left: -5.5rem;
+  }
+  .link3 {
+    left: -0.5rem;
+  }
+  .link4 {
+    top: 0;
+    right: -0.5rem;
+  }
+  .link5 {
+    right: -5.5rem;
+  }
+  .link6 {
+    right: -0.5rem;
+  }
+}
+@media (max-width: 580px) {
+  .link1 {
+    top: 120%;
+    left: -0.5rem;
+  }
+  .link4 {
+    top: 120%;
+    right: -0.5rem;
+  }
+  .link2 {
+    top: 110%;
+    left: 22%;
+  }
+  .link5 {
+    top: 110%;
+    right: 22%;
+  }
+}
+@media (max-width: 400px) {
+  .link2 {
+    top: 110%;
+    left: 18%;
+  }
+  .link5 {
+    top: 110%;
+    right: 18%;
+  }
+}

@@ -1,0 +1,85 @@
+.education {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+.education .back-btn {
+  background-color: #90b1a6;
+}
+.education .left {
+  background-color: #90b1a6;
+  z-index: 3;
+}
+.sections {
+  position: absolute;
+  top: 20%;
+}
+.edu,
+.cation {
+  position: absolute;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 5rem;
+}
+.edu {
+  right: 0;
+  color: #ffffff;
+}
+.cation {
+  left: 0;
+  color: #90b1a6;
+}
+.education-section {
+  margin-top: 50px;
+  padding-left: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
+.education-section .date {
+  margin-left: 10px;
+}
+.education-section .edu-title {
+  margin-left: 20px;
+}
+.education-section ul {
+  margin-left: 40px;
+}
+.education-section hr {
+  margin-left: 20px;
+  width: 50%;
+}
+.right {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  right: 0;
+  background-color: #ffffff;
+}
+.image-education {
+  position: absolute;
+  width: 40vw;
+  top: 50%;
+  left: 5vw;
+  transform: translateY(-50%);
+}
+.sections p,
+h4,
+li,
+hr {
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .right,
+  .edu,
+  .cation {
+    display: none;
+  }
+  .sections {
+    top: 50px;
+  }
+  .edu-m {
+    display: block !important;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 50px 0 0 10px;
+    color: white;
+  }
+}
