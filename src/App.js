@@ -25,8 +25,8 @@ render(){
     <div className="App">
       <Switch>
       <Route path="/" component={Circle} exact />
-      <Route path = "/profile" component = {Profile} exact/>
-      <Route path = "/education" component = {Education} exact/>
+      <Route path = "/profile" component = {Profile}/>
+      <Route path = "/education" component = {Education}/>
       </Switch>
     </div>
     </BrowserRouter>
