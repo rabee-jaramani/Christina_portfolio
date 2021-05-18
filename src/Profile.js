@@ -1,4 +1,4 @@
-import gsap, { TweenMax } from 'gsap/gsap-core'
+import gsap from 'gsap/gsap-core'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import img from './images/english_white.jpg'
@@ -83,7 +83,7 @@ export default class Profile extends React.Component {
                 <div className='profile-img'>
                 <h1 className='file'>FILE</h1>
 
-                    <img className='image-profile' src={img}></img>
+                    <img className='image-profile' src={img} alt='english2'></img>
                 </div>
             </div>
             <Link id='profile_home_link' className='hide-D' to='/'></Link>

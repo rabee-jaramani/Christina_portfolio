@@ -1,7 +1,7 @@
 
 // import {gsap} from 'gsap'
 import React from 'react';
-import { BrowserRouter, Route, Router, Switch, useLocation } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Circle from './Circle';
 import './style.css'
 import './circle.css'

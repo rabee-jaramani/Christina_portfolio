@@ -82,7 +82,7 @@ export default class Education extends React.Component {
             </div>
             <div className='right'>
                 <h1 className='cation'>CATION</h1>
-                <img className='image-education' src={img1}></img>
+                <img className='image-education' src={img1} alt='english'></img>
             </div>
             <Link id='profile_home_link' className='hide-D' to='/'></Link>
 

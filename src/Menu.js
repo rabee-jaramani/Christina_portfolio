@@ -25,11 +25,11 @@ link_clicked(e){
   gsap.to(".circle",{top:-1000,delay:1,duration:1});
 // delay the new page
 if(e==="profile"){
-  var link=document.getElementById("link1");
+  let link=document.getElementById("link1");
   setTimeout(()=>{link.click()},1500)
 }else
 if(e==="education"){
-  var link=document.getElementById("link4");
+  let link=document.getElementById("link4");
   setTimeout(()=>{link.click()},1500)
 }
 }
