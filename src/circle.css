@@ -88,6 +88,9 @@
   }
 }
 @media (max-width: 1000px) {
+  .circle {
+    top: 40%;
+  }
   .c1 {
     height: 400px;
     width: 400px;
