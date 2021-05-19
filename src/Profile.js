@@ -10,6 +10,7 @@ export default class Profile extends React.Component {
         gsap.from(".pro",{top:-200,duration:1,delay:1})
         gsap.from(".file",{left:-200,duration:1,delay:2})
         gsap.from(".image-profile",{left:-1000,duration:1,delay:2.5})
+        if(window.innerWidth>1000){
         gsap.from(".element1",{left:-1000,duration:1.7,delay:2.5})
         gsap.from(".element2",{left:-1000,duration:1.9,delay:2.5})
         gsap.from(".element3",{left:-1000,duration:2.1,delay:2.5})
@@ -21,7 +22,19 @@ export default class Profile extends React.Component {
         gsap.from(".element9",{left:-1000,duration:3.3,delay:2.5})
         gsap.from(".element10",{left:-1000,duration:3.5,delay:2.5})
         gsap.from(".element11",{left:-1000,duration:3.7,delay:2.5})
-        
+        }else{
+            gsap.from(".element1",{left:-1000,duration:1.7})
+            gsap.from(".element2",{left:-1000,duration:1.9})
+            gsap.from(".element3",{left:-1000,duration:2.1})
+            gsap.from(".element4",{left:-1000,duration:2.3})
+            gsap.from(".element5",{left:-1000,duration:2.5})
+            gsap.from(".element6",{left:-1000,duration:2.7})
+            gsap.from(".element7",{left:-1000,duration:2.9})
+            gsap.from(".element8",{left:-1000,duration:3.1})
+            gsap.from(".element9",{left:-1000,duration:3.3})
+            gsap.from(".element10",{left:-1000,duration:3.5})
+            gsap.from(".element11",{left:-1000,duration:3.7})
+        }
         
     }
     back_home(){

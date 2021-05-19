@@ -15,6 +15,7 @@ export default class Education extends React.Component {
         gsap.from(".edu",{top:-200,duration:1,delay:1})
         gsap.from(".cation",{left:-400,duration:1,delay:2})
         gsap.from(".image-education",{left:-1000,duration:1,delay:2.5})
+        if(window.innerWidth>1000){
         gsap.from(".element0",{left:-1000,duration:1.5,delay:2.5})
         gsap.from(".element01",{left:-1000,duration:1.7,delay:2.5})
         gsap.from(".element02",{left:-1000,duration:1.9,delay:2.5})
@@ -33,6 +34,26 @@ export default class Education extends React.Component {
         gsap.from(".element8",{left:-1000,duration:4.5,delay:2.5})
         gsap.from(".element9",{left:-1000,duration:4.7,delay:2.5})
         gsap.from(".element10",{left:-1000,duration:4.9,delay:2.5})
+        }else{
+            gsap.from(".element0",{left:-1000,duration:1.5,})
+            gsap.from(".element01",{left:-1000,duration:1.7,})
+            gsap.from(".element02",{left:-1000,duration:1.9,})
+            gsap.from(".element03",{left:-1000,duration:2.1,})
+            gsap.from(".element04",{left:-1000,duration:2.3,})
+            gsap.from(".element05",{left:-1000,duration:2.5,})
+            gsap.from(".element06",{left:-1000,duration:2.7,})
+            gsap.from(".element07",{left:-1000,duration:2.9,})
+            gsap.from(".element1",{left:-1000,duration:3.1,})
+            gsap.from(".element2",{left:-1000,duration:3.3,})
+            gsap.from(".element3",{left:-1000,duration:3.5,})
+            gsap.from(".element4",{left:-1000,duration:3.7,})
+            gsap.from(".element5",{left:-1000,duration:3.9,})
+            gsap.from(".element6",{left:-1000,duration:4.1,})
+            gsap.from(".element7",{left:-1000,duration:4.3,})
+            gsap.from(".element8",{left:-1000,duration:4.5,})
+            gsap.from(".element9",{left:-1000,duration:4.7,})
+            gsap.from(".element10",{left:-1000,duration:4.9,})
+        }
        
     }
     render(){
