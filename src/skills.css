@@ -4,3 +4,34 @@
 .lls {
   color: rgb(251, 129, 180);
 }
+#skills_generator,
+.skills-ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+#skills_generator {
+  color: white;
+}
+.skills-ul {
+  color: rgb(251, 129, 180);
+}
+@media (max-width: 1000px) {
+  .skills-title-m {
+    display: block !important;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+  }
+  #skills_generator {
+    display: none;
+  }
+  .skills-ul-m {
+    color: white;
+    display: block !important;
+    margin-left: 50px;
+  }
+}
