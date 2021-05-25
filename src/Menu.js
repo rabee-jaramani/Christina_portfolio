@@ -35,6 +35,10 @@ if(e==="education"){
 if(e==='skills'){
   let link=document.getElementById("link3");
   setTimeout(()=>{link.click()},1500)
+}else
+if(e==='certificates'){
+  let link=document.getElementById("link2");
+  setTimeout(()=>{link.click()},1500)
 }
 }
 
@@ -102,7 +106,7 @@ unhover_func(e){
             onMouseOut={()=>this.unhover_func("link2")}
             >
                 <div className='link-circle'></div>
-                <div className="inner-link inner-link2">Experience</div>
+                <div className="inner-link inner-link2" onClick={()=>this.link_clicked("certificates")}>Certificates</div>
             </div>
 
             <div className="link link3"
@@ -139,6 +143,7 @@ unhover_func(e){
             <Link id="link1" to="/profile" className='hide-D'> </Link>
             <Link id="link4" to="/education" className='hide-D'> </Link>
             <Link id="link3" to="/skills" className='hide-D'> </Link>
+            <Link id="link2" to="/certificates" className='hide-D'> </Link>
 
         </div>
     )

@@ -96,14 +96,14 @@
     width: 400px;
   }
   .c2 {
-    border-left: solid rgb(228, 213, 0) 5px;
-    border-right: solid rgb(228, 213, 0) 5px;
+    border-left: solid var(--outer_circle_color) 5px;
+    border-right: solid var(--outer_circle_color) 5px;
     border-bottom: solid transparent 5px;
     border-top: solid transparent 5px;
   }
   .c3 {
-    border-top: solid rgb(255, 255, 255) 5px;
-    border-bottom: solid rgb(255, 255, 255) 5px;
+    border-top: solid var(--inner_circle_color) 5px;
+    border-bottom: solid var(--inner_circle_color) 5px;
     border-left: solid transparent 5px;
     border-right: solid transparent 5px;
   }

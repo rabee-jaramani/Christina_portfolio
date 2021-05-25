@@ -1,5 +1,5 @@
 .link {
-  --links_circle_color: rgb(255, 72, 0);
+  --links_circle_color: #d3ae69;
   width: 10rem;
   height: 4rem;
   border-radius: 80px;
@@ -31,8 +31,8 @@ a:active {
   left: 0;
   height: 100%;
   width: 40%;
-  border-top: solid rgb(255, 72, 0) 2px;
-  border-bottom: solid rgb(255, 72, 0) 2px;
+  border-top: solid var(--links_circle_color) 2px;
+  border-bottom: solid var(--links_circle_color) 2px;
   border-left: solid transparent 2px;
   border-right: solid transparent 2px;
   pointer-events: none;
