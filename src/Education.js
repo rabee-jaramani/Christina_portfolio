@@ -1,7 +1,7 @@
 import gsap from 'gsap/gsap-core';
 import React from 'react'
 import { Link } from 'react-router-dom';
-import img1 from './images/english_white.jpg'
+import img1 from './images/english.jpg'
 
 export default class Education extends React.Component {
     back_home(){

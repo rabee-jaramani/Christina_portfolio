@@ -7,6 +7,7 @@ import Profile from './Profile';
 import Education from './Education';
 import Skills from './Skills';
 import Certificates from './Certificates';
+import References from './References';
 
 import './style.css'
 import './circle.css'
@@ -16,7 +17,7 @@ import './profile.css'
 import './education.css'
 import './skills.css'
 import './certificates.css'
-
+import './references.css'
 // import Menu from './Menu';
 class App extends React.Component {
 
@@ -35,6 +36,8 @@ render(){
       <Route path = "/education" component = {Education}/>
       <Route path = "/skills" component = {Skills}/>
       <Route path = "/certificates" component = {Certificates}/>
+      <Route path = "/references" component = {References}/>
+      
       </Switch>
     </div>
     </BrowserRouter>
