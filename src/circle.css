@@ -140,8 +140,10 @@
   }
 }
 @media (max-width: 780px) {
+  .my-name-cont {
+    top: -2rem;
+  }
   .my-name {
-    top: -50px;
     font-size: 0.8rem;
   }
   .my-name span {
