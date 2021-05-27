@@ -13,16 +13,13 @@
 .hobbies-title span {
   position: relative;
 }
-.netball {
+.hobby {
   width: 100%;
   display: flex;
   margin-top: 2rem;
   justify-content: space-evenly;
 }
-.netball1,
-.netball2,
-.netball3,
-.netball4 {
+.hobby-img {
   background-size: contain;
   height: 200px;
   background-repeat: no-repeat;
@@ -36,7 +33,7 @@
 }
 .netball4 {
 }
-.netball-title {
+.hobby-title {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 3%;
 }
@@ -45,22 +42,26 @@
   .hobbies-title {
     font-size: 3rem;
   }
-  .netball {
+  .hobby {
     flex-direction: column;
     width: 100%;
     margin-left: 50%;
     transform: translate(-50%);
   }
-  .netball1,
-  .netball2,
-  .netball3,
-  .netball4 {
-    height: 150px;
-    width: 20%;
+  .hobby-img {
+    height: 250px;
+    width: 40%;
     margin-left: 50%;
     transform: translate(-50%);
   }
-  .netball-title {
+  .swim1,
+  .swim2,
+  .swim3,
+  .swim4 {
+    height: 150px;
+    width: 20%;
+  }
+  .hobby-title {
     font-size: 1.2rem;
     width: 100%;
     text-align: center;
