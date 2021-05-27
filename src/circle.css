@@ -120,6 +120,9 @@
   .circle {
     top: 40%;
   }
+  .circle .footer {
+    display: none;
+  }
   .c1 {
     height: 400px;
     width: 400px;
