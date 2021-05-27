@@ -144,7 +144,7 @@ unhover_func(e){
              onMouseOut={()=>this.unhover_func("link6")}
             >
                 <div className='link-circle'></div>
-                <div className="inner-link inner-link6" onClick={()=>this.link_clicked("hobbies")}>Hobbies</div>
+                <div className="inner-link inner-link6" onClick={()=>this.link_clicked("sports")}>sports</div>
 
             </div>
            
@@ -154,7 +154,7 @@ unhover_func(e){
             <Link id="link3" to="/skills" className='hide-D'> </Link>
             <Link id="link2" to="/certificates" className='hide-D'> </Link>
             <Link id="link5" to="/references" className='hide-D'> </Link>
-            <Link id="link6" to="/hobbies" className='hide-D'> </Link>
+            <Link id="link6" to="/sports" className='hide-D'> </Link>
         </div>
     )
     }

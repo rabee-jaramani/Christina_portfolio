@@ -1,27 +1,32 @@
-.hobbies {
+.sports {
   width: 100%;
   position: absolute;
   background-color: white;
   min-height: 100vh;
   max-height: auto;
 }
-.hobbies-title {
+.sports-title {
   position: relative;
   width: 100%;
   text-align: center;
   color: rgb(71, 71, 71);
   margin-top: 20px;
 }
-.hobbies-title span {
+.sports-title span {
   position: relative;
 }
-.hobby {
+.sports-title-2 {
+  width: 100%;
+  text-align: center;
+  color: rgb(71, 71, 71);
+}
+.sport {
   width: 100%;
   display: flex;
   margin-top: 2rem;
   justify-content: space-evenly;
 }
-.hobby-img {
+.sport-img {
   background-size: contain;
   height: 200px;
   background-repeat: no-repeat;
@@ -33,7 +38,7 @@
 .swim4 {
   width: 200px;
 }
-.hobby-title {
+.sport-title {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 3%;
 }
@@ -48,26 +53,29 @@
 }
 
 @media (max-width: 700px) {
-  .hobbies {
+  .sports {
     height: auto;
   }
-  .hobbies-title {
+  .sports-title {
     font-size: 1.7rem;
   }
-  .hobby {
+  .sports-title-2 {
+    font-size: 1.2rem;
+  }
+  .sport {
     flex-direction: column;
     width: 100%;
     margin-left: 50%;
     transform: translate(-50%);
   }
-  .hobby-img {
+  .sport-img {
     height: 250px;
     width: 40%;
     margin-left: 50%;
     transform: translate(-50%);
   }
 
-  .hobby-title {
+  .sport-title {
     font-size: 1.2rem;
     width: 100%;
     text-align: center;

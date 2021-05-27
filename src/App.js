@@ -8,7 +8,7 @@ import Education from './Education';
 import Skills from './Skills';
 import Certificates from './Certificates';
 import References from './References';
-import Hobbies from './Hobbies';
+import Sports from './Sports';
 
 import './style.css'
 import './circle.css'
@@ -19,8 +19,8 @@ import './education.css'
 import './skills.css'
 import './certificates.css'
 import './references.css'
-import './hobbies.css'
 import './footer.css'
+import './sports.css'
 // import Menu from './Menu';
 class App extends React.Component {
 
@@ -40,8 +40,7 @@ render(){
       <Route path = "/skills" component = {Skills}/>
       <Route path = "/certificates" component = {Certificates}/>
       <Route path = "/references" component = {References}/>
-      <Route path='/hobbies' component={Hobbies}/>
-      
+      <Route path='/sports' component={Sports}/>
       </Switch>
 
     </div>
