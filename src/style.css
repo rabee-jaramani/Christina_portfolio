@@ -36,6 +36,4 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 .App {
-  max-width: 100vw;
-  overflow-x: hidden;
 }

@@ -9,6 +9,7 @@
   background-image: url("./images/image.jpeg");
   background-size: cover;
   transition: 0.5s;
+  overflow-x: hidden;
 }
 .background-contact-circle ul {
   width: 100%;
