@@ -7,6 +7,10 @@
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+.circle .footer {
+  left: -600px;
+  bottom: -100px;
+}
 .my-name-cont {
   position: absolute;
   top: -80px;

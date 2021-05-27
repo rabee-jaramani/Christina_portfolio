@@ -7,11 +7,14 @@ import cert3 from './images/ceritificates/cot.png'
 import cert4 from './images/ceritificates/moe_equ.jpeg'
 import cert5 from './images/ceritificates/ons.png'
 import cert6 from './images/ceritificates/ttrt.png'
+import Footer from './Footer';
 export default class Certificates extends React.Component {
     back_home(){
         gsap.to(".certificates",{top:-1000,duration:1,})
         var s=document.getElementById('profile_home_link');
         setTimeout(()=>{s.click()},1000);
+        gsap.to('.footer',{opacity:0})
+
     }
     show_img(cert){
         document.querySelector('.cert-grid-container').classList.add('hide-D')
@@ -65,8 +68,8 @@ export default class Certificates extends React.Component {
         gsap.from('#img4',{right:-1200,duration:1,delay:2.6})
         gsap.from('#img5',{left:-1200,duration:1,delay:2.8})
         gsap.from('#img6',{right:-1200,duration:1,delay:3})
-      
-
+    //   footer
+    gsap.from('.footer',{opacity:0,duration:1,delay:3})
     }
     render(){
     return (
@@ -132,6 +135,7 @@ export default class Certificates extends React.Component {
                     <i class="fas fa-times" onClick={this.show_images}></i>
                     <img className='image' src={cert6} alt="Degree"/>
             </div>
+      <Footer/>
         </div>
     )
 }

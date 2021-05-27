@@ -2,9 +2,12 @@ import gsap from 'gsap/gsap-core';
 import React from 'react'
 import { Link } from 'react-router-dom';
 import TypeIt from 'typeit'
+import Footer from './Footer';
 export default class Skills extends React.Component {
 
     componentDidMount(){
+        gsap.from('.footer',{opacity:0,duration:1,delay:3})
+        
         gsap.from(".skills",{top:-1000,duration:1})
         gsap.from(".ski",{top:-200,duration:1,delay:1})
         gsap.from(".lls",{left:-200,duration:1,delay:2})
@@ -53,6 +56,7 @@ export default class Skills extends React.Component {
             .go();
     }
     back_home(){
+        gsap.to('.footer',{opacity:0})
         gsap.to(".skills",{top:-1000,duration:1})
         var s=document.getElementById('profile_home_link');
         setTimeout(()=>{s.click()},1000);
@@ -95,7 +99,7 @@ export default class Skills extends React.Component {
                 </ul>
             </div>
             <Link id='profile_home_link' className='hide-D' to='/'></Link>
-
+            <Footer/>
         </div>
     )
 }

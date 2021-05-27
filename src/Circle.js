@@ -1,8 +1,10 @@
 // import { ScrollTrigger } from 'gsap/all';
 // import gsap from 'gsap/gsap-core';
+import gsap from 'gsap/gsap-core';
 import  { TweenMax } from 'gsap/gsap-core'
 import React from 'react'
 import Contact from './Contact';
+import Footer from './Footer';
 import Menu from './Menu';
 
 export default class Circle extends React.Component {
@@ -11,10 +13,13 @@ export default class Circle extends React.Component {
         TweenMax.from(".contact-btn",{css:{bottom: -50},delay:1,duration:2})
         TweenMax.from("#christina",{css:{opacity: 0},delay:3,duration:2})
         TweenMax.from("#teacher",{css:{opacity: 0},delay:3,duration:2})
-
+        gsap.from('.footer',{opacity:0,duration:1,delay:3})
+        
     }
     componentWillUnmount(){
         TweenMax.to(".circle",{css:{top: -500},duration:.5})
+        gsap.to('.footer',{opacity:0})
+
     }
     hold(){
         TweenMax.to(".c1 .c2",{css:{animationPlayState: "paused"}})
@@ -53,6 +58,7 @@ export default class Circle extends React.Component {
                     
                     <Menu/>
                 </div>
+                <Footer/>
             </section>
         )
     }

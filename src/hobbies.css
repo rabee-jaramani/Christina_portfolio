@@ -2,12 +2,14 @@
   width: 100%;
   position: absolute;
   background-color: white;
+  min-height: 100vh;
+  max-height: auto;
 }
 .hobbies-title {
   position: relative;
   width: 100%;
   text-align: center;
-  color: rgb(213, 163, 179);
+  color: rgb(71, 71, 71);
   margin-top: 20px;
 }
 .hobbies-title span {
@@ -25,22 +27,32 @@
   background-repeat: no-repeat;
   position: relative;
 }
-.netball1 {
-}
-.netball2 {
-}
-.netball3 {
-}
-.netball4 {
+.swim1,
+.swim2,
+.swim3,
+.swim4 {
+  width: 200px;
 }
 .hobby-title {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 3%;
 }
+.netball h3 {
+  color: coral;
+}
+.swim h3 {
+  color: cornflowerblue;
+}
+.tennis h3 {
+  color: darkseagreen;
+}
 
 @media (max-width: 700px) {
+  .hobbies {
+    height: auto;
+  }
   .hobbies-title {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
   .hobby {
     flex-direction: column;

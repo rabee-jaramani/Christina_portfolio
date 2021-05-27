@@ -4,7 +4,7 @@
 .references {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .back-btn {
@@ -78,6 +78,12 @@
   color: #ffe2de;
 }
 @media (max-width: 1000px) {
+  .profile,
+  .education,
+  .skills,
+  .references {
+    height: fit-content;
+  }
   .left {
     width: 100%;
   }

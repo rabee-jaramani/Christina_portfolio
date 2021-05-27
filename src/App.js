@@ -20,6 +20,7 @@ import './skills.css'
 import './certificates.css'
 import './references.css'
 import './hobbies.css'
+import './footer.css'
 // import Menu from './Menu';
 class App extends React.Component {
 
@@ -42,6 +43,7 @@ render(){
       <Route path='/hobbies' component={Hobbies}/>
       
       </Switch>
+
     </div>
     </BrowserRouter>
   );

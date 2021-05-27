@@ -1,11 +1,14 @@
 import gsap from 'gsap/gsap-core'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
 import img from './images/english_white.jpg'
 
 export default class Profile extends React.Component {
 
     componentDidMount(){
+        gsap.from('.footer',{opacity:0,duration:1,delay:3})
+       
         gsap.from(".profile",{top:-1000,duration:1})
         gsap.from(".pro",{top:-200,duration:1,delay:1})
         gsap.from(".file",{left:-200,duration:1,delay:2})
@@ -37,7 +40,8 @@ export default class Profile extends React.Component {
         }
         
     }
-    back_home(){
+    back_home(){ 
+        gsap.to('.footer',{opacity:0})
         gsap.to(".profile",{top:-1000,duration:1})
         var s=document.getElementById('profile_home_link');
         setTimeout(()=>{s.click()},1000);
@@ -100,6 +104,7 @@ export default class Profile extends React.Component {
                 </div>
             </div>
             <Link id='profile_home_link' className='hide-D' to='/'></Link>
+            <Footer/>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import gsap from 'gsap/gsap-core';
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 import img1 from './images/english.jpg'
 
 export default class Education extends React.Component {
@@ -8,9 +9,11 @@ export default class Education extends React.Component {
         gsap.to(".education",{top:-1000,duration:1,})
         var s=document.getElementById('profile_home_link');
         setTimeout(()=>{s.click()},1000);
-        
+        gsap.to('.footer',{opacity:0})
     }
     componentDidMount(){
+        gsap.from('.footer',{opacity:0,duration:1,delay:3})
+        
         gsap.from(".education",{top:-1000,duration:1,})
         gsap.from(".edu",{top:-200,duration:1,delay:1})
         gsap.from(".cation",{left:-400,duration:1,delay:2})
@@ -106,7 +109,7 @@ export default class Education extends React.Component {
                 <img className='image-education' src={img1} alt='english'></img>
             </div>
             <Link id='profile_home_link' className='hide-D' to='/'></Link>
-
+            <Footer/>
         </div>
     )
 }
