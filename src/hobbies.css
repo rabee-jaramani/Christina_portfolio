@@ -1,0 +1,68 @@
+.hobbies {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+.hobbies-title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: rgb(213, 163, 179);
+  margin-top: 20px;
+}
+.hobbies-title span {
+  position: relative;
+}
+.netball {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+.netball1,
+.netball2,
+.netball3,
+.netball4 {
+  background-size: contain;
+  height: 200px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.netball1 {
+}
+.netball2 {
+}
+.netball3 {
+}
+.netball4 {
+}
+.netball-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 3%;
+}
+
+@media (max-width: 700px) {
+  .hobbies-title {
+    font-size: 3rem;
+  }
+  .netball {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .netball1,
+  .netball2,
+  .netball3,
+  .netball4 {
+    height: 150px;
+    width: 20%;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .netball-title {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+}

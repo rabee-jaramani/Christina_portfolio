@@ -14,6 +14,7 @@
   cursor: pointer;
   z-index: 10;
   background-color: transparent;
+  color: rgba(0, 0, 0, 0.527);
 }
 .left {
   position: absolute;
@@ -21,6 +22,7 @@
   width: 50%;
   z-index: 3;
 }
+
 .text {
   position: absolute;
   height: 100%;
@@ -59,10 +61,12 @@
 .pro,
 .file,
 .edu,
-.cation {
+.cation,
+.hobbies-title {
   position: absolute;
   font-size: 5rem;
   top: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .pro {
   z-index: 3;
@@ -78,6 +82,8 @@
     width: 100%;
   }
   .text {
+    background-image: url("./images/body_bg_m.jpg");
+    background-size: cover;
     height: auto;
     width: 100%;
     font-size: 1rem;

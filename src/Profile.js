@@ -48,7 +48,7 @@ export default class Profile extends React.Component {
            <div className="back-btn" onClick={this.back_home}><i class="fas fa-long-arrow-alt-left">back</i></div>
 
            <div className='about-me-profile'>
-               <div className='left'>
+               <div className='left' id='profile-left'>
                 <h1 className='pro'>PRO</h1>
                 <h3 className='profile-title hide-D'>PROFILE</h3>
 

@@ -44,6 +44,10 @@ if(e==='references'){
   let link=document.getElementById("link5");
   setTimeout(()=>{link.click()},1500)
 }
+else{
+  let link=document.getElementById("link6");
+  setTimeout(()=>{link.click()},1500)
+}
 }
 
 
@@ -141,7 +145,8 @@ unhover_func(e){
              onMouseOut={()=>this.unhover_func("link6")}
             >
                 <div className='link-circle'></div>
-                <div className="inner-link inner-link6">Hobbies</div>
+                <div className="inner-link inner-link6" onClick={()=>this.link_clicked("hobbies")}>Hobbies</div>
+
             </div>
             {/* LINKS hidden and outside to prevent setTimeout from trigger twice remember */}
             <Link id="link1" to="/profile" className='hide-D'> </Link>
@@ -149,6 +154,7 @@ unhover_func(e){
             <Link id="link3" to="/skills" className='hide-D'> </Link>
             <Link id="link2" to="/certificates" className='hide-D'> </Link>
             <Link id="link5" to="/references" className='hide-D'> </Link>
+            <Link id="link6" to="/hobbies" className='hide-D'> </Link>
 
 
         </div>
