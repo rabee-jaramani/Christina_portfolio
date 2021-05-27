@@ -38,7 +38,7 @@ export default class References extends React.Component {
                     <li>Number: +971 50 185 9773</li>
                     <li>Email: nicola.east@ajmanamericanschool.com </li>
                     <br/>
-                    <li>School: Ajman American Private School, UAE</li>
+                    <li>School: Diyar International Private School</li>
                     <li>Contact name: M. T.M. Harness</li>
                     <li>Head of Department (Kindergarten)</li>
                     <li>Number: +971 56 464 9760</li>
