@@ -5,7 +5,7 @@ import React from 'react'
 import Contact from './Contact';
 import Footer from './Footer';
 import Menu from './Menu';
-import ChristinaCV from './CV/Christina-CV.docx'
+import ChristinaCV from './CV/Christina Curriculum Vitae.pdf'
 
 
 export default class Circle extends React.Component {
@@ -51,7 +51,7 @@ export default class Circle extends React.Component {
                 <div className='c1'
                 onMouseOver={this.hold}
                 onMouseOut={this.resume}>
-                     <a href={ChristinaCV} className="download-cv" download="Christina CV.docx">
+                     <a href={ChristinaCV} className="download-cv" download="Christina Curriculum Vitae.pdf">
                         MY CV
                     </a>
                     <div className="details-btn contact-btn" onClick={this.show_details}>Contact</div>

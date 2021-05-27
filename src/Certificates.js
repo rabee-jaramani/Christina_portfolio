@@ -7,6 +7,8 @@ import cert3 from './images/ceritificates/cot.png'
 import cert4 from './images/ceritificates/moe_equ.jpeg'
 import cert5 from './images/ceritificates/ons.png'
 import cert6 from './images/ceritificates/ttrt.png'
+import cert7 from './images/ceritificates/cert7.png'
+
 import Footer from './Footer';
 export default class Certificates extends React.Component {
     back_home(){
@@ -36,6 +38,9 @@ export default class Certificates extends React.Component {
         }
         if(cert==="img6"){
             document.querySelector('.image-container6').classList.remove('hide-D');
+        }
+        if(cert==="img7"){
+            document.querySelector('.image-container7').classList.remove('hide-D');
         }
     }
     show_images(){
@@ -68,6 +73,8 @@ export default class Certificates extends React.Component {
         gsap.from('#img4',{right:-1200,duration:1,delay:2.6})
         gsap.from('#img5',{left:-1200,duration:1,delay:2.8})
         gsap.from('#img6',{right:-1200,duration:1,delay:3})
+        gsap.from('#img7',{right:-1200,duration:1,delay:3.2})
+
     //   footer
     gsap.from('.footer',{opacity:0,duration:1,delay:3})
     }
@@ -108,6 +115,9 @@ export default class Certificates extends React.Component {
                 <div class="grid-item" id='img6'><img src={cert6} 
                 onClick={()=>this.show_img("img6")}
                 alt='christina certificate'></img></div>
+                <div class="grid-item" id='img7'><img src={cert7} 
+                onClick={()=>this.show_img("img7")}
+                alt='christina certificate'></img></div>
             </div>
             <Link id='profile_home_link' className='hide-D' to='/'></Link>
 
@@ -134,6 +144,10 @@ export default class Certificates extends React.Component {
             <div className='image-container6 img-cont hide-D'>
                     <i class="fas fa-times" onClick={this.show_images}></i>
                     <img className='image' src={cert6} alt="Degree"/>
+            </div>
+            <div className='image-container7 img-cont hide-D'>
+                    <i class="fas fa-times" onClick={this.show_images}></i>
+                    <img className='image' src={cert7} alt="Degree"/>
             </div>
       <Footer/>
         </div>
