@@ -2,7 +2,6 @@ import { TweenMax } from 'gsap/all'
 import gsap from 'gsap/gsap-core'
 import React from 'react'
 import { Link } from 'react-router-dom';
-
 export default class Menu extends React.Component {
 componentDidMount(){
 // animate the links
@@ -148,6 +147,7 @@ unhover_func(e){
                 <div className="inner-link inner-link6" onClick={()=>this.link_clicked("hobbies")}>Hobbies</div>
 
             </div>
+           
             {/* LINKS hidden and outside to prevent setTimeout from trigger twice remember */}
             <Link id="link1" to="/profile" className='hide-D'> </Link>
             <Link id="link4" to="/education" className='hide-D'> </Link>
@@ -155,8 +155,6 @@ unhover_func(e){
             <Link id="link2" to="/certificates" className='hide-D'> </Link>
             <Link id="link5" to="/references" className='hide-D'> </Link>
             <Link id="link6" to="/hobbies" className='hide-D'> </Link>
-
-
         </div>
     )
     }

@@ -1,16 +1,18 @@
-// import { ScrollTrigger } from 'gsap/all';
-// import gsap from 'gsap/gsap-core';
+
 import gsap from 'gsap/gsap-core';
 import  { TweenMax } from 'gsap/gsap-core'
 import React from 'react'
 import Contact from './Contact';
 import Footer from './Footer';
 import Menu from './Menu';
+import ChristinaCV from './CV/Christina-CV.docx'
+
 
 export default class Circle extends React.Component {
     componentDidMount(){
         TweenMax.from(".circle",{css:{top: -500},delay:.5,duration:2})
         TweenMax.from(".contact-btn",{css:{bottom: -50},delay:1,duration:2})
+        gsap.from(".download-cv",{opacity:0,delay:2,duration:2})
         TweenMax.from("#christina",{css:{opacity: 0},delay:3,duration:2})
         TweenMax.from("#teacher",{css:{opacity: 0},delay:3,duration:2})
         gsap.from('.footer',{opacity:0,duration:1,delay:3})
@@ -34,7 +36,7 @@ export default class Circle extends React.Component {
         document.querySelector(".background-contact-circle").classList.toggle("white-bg");
         document.querySelector(".me-btn").classList.toggle("show");
         document.querySelector(".contact-btn").classList.toggle("hide");
-        
+        document.querySelector('.download-cv').classList.toggle('hide-D')
         
     }
     
@@ -49,6 +51,9 @@ export default class Circle extends React.Component {
                 <div className='c1'
                 onMouseOver={this.hold}
                 onMouseOut={this.resume}>
+                     <a href={ChristinaCV} className="download-cv" download="Christina CV.docx">
+                        MY CV
+                    </a>
                     <div className="details-btn contact-btn" onClick={this.show_details}>Contact</div>
                     <div className="details-btn me-btn hide" onClick={this.show_details}>Me</div>
                     <Contact/>

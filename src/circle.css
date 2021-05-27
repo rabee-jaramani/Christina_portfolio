@@ -8,7 +8,7 @@
   z-index: 1;
 }
 .circle .footer {
-  left: -600px;
+  left: -25vw;
   bottom: -100px;
 }
 .my-name-cont {
@@ -39,7 +39,8 @@
   box-shadow: 5px 10px 8px #6e6d6d;
 }
 
-.c1 .details-btn {
+.c1 .details-btn,
+.download-cv {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -47,11 +48,13 @@
   z-index: 10;
   color: white;
   background: rgba(255, 255, 255, 0.246);
-  width: 6rem;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
   box-shadow: 5px 5px 8px #b6b6b6a4;
+}
+.download-cv {
+  bottom: 100px !important;
 }
 .me-btn {
   color: black !important;
@@ -86,6 +89,24 @@
   border-left: solid transparent 7px;
   border-right: solid transparent 7px;
   animation: c1_rotate 7s infinite linear;
+}
+
+.download-cv:link {
+  color: rgb(255, 255, 255);
+}
+/* visited link */
+.download-cv:visited {
+  color: rgb(255, 178, 67);
+}
+/* mouse over link */
+.download-cv:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 5px 10px 8px #b6b6b6a4;
+}
+/* selected link */
+.download-cv:active {
+  color: rgb(255, 178, 67);
 }
 
 @keyframes c1_rotate {
@@ -159,6 +180,9 @@
   .c1 .details-btn {
     font-size: 1rem;
     bottom: 20px;
+  }
+  .download-cv {
+    bottom: 50px !important;
   }
   .c1 {
     height: 400px;
