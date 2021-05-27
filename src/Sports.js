@@ -24,6 +24,7 @@ export default class Sports extends React.Component {
         setTimeout(()=>{s.click()},1000);
     }
 componentDidMount(){
+    
     gsap.from('.footer',{opacity:0,duration:1,delay:2})
    
     gsap.from('#s',{left:-2000,duration:1})
@@ -32,6 +33,7 @@ componentDidMount(){
     gsap.from('#r',{right:-2000,duration:1,delay:0.6})
     gsap.from('#t',{left:-2000,duration:1,delay:0.8})
     gsap.from('#s',{right:-2000,duration:1,delay:1})
+    gsap.from('.sports-title-2',{top:-1000,duration:1,delay:2})
     setTimeout(()=>{document.querySelector('.netball').classList.remove('hide')},1400)
     setTimeout(()=>{document.querySelector('.swim').classList.remove('hide')},1400)
     setTimeout(()=>{document.querySelector('.tennis').classList.remove('hide')},1400)
